@@ -1,0 +1,24 @@
+
+.btn {
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 20px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    transition: transform .3s ease;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
