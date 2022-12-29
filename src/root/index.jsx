@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import ClassComponents from '../components/ClassComponents';
-import FunctionalComponents from '../components/FunctionalComponents';
+import Crud from '../components/Crud';
 
 class Root extends Component {
   render() {
     return (
       <div>
-        <ClassComponents />
-        <hr />
-        <FunctionalComponents />
+        <Crud />
       </div>
     );
   }

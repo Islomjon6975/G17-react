@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
 class ClassComponents extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
+      name: ''
     }
   }
+
   render() {
 
     const plus = () => {

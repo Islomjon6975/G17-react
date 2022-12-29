@@ -1,5 +1,4 @@
-const arr = ['initial state', 'function']
+let str = null;
 
-const [state, functionn] = arr
 
-console.log(functionn)
+console.log(str)
