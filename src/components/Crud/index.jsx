@@ -22,7 +22,7 @@ const Crud = () => {
 
     return (
       <div>
-        <h1>Hi 0</h1>
+        <h1>Hi</h1>
         {
           state.students.map((value) => {
             return(
