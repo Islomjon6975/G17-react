@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import UseReducer from '../components/UseReducer';
 
 class Root extends Component {
   render() {
     return (
       <div>
-        Root
+        <UseReducer />
       </div>
     );
   }
