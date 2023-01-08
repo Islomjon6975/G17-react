@@ -1,14 +1,11 @@
 import React, {useReducer} from 'react'
 import { reducer } from './reducer'
-
 const mock = [
   {id: 1, title: 'olma'},
   {id: 2, title: 'nok'},
   {id: 3, title: 'banan'},
   {id: 4, title: 'behi'},
 ]
-
-
 export const UseReducer = () => {
   const [state, dispatch] = useReducer(reducer, JSON.parse(localStorage.getItem('data')))
   localStorage.setItem('data', JSON.stringify(state))
