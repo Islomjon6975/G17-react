@@ -4,6 +4,7 @@ const mock = [
   {id: 3, title: 'banan'},
   {id: 4, title: 'behi'},
 ]
+
 export const reducer = (state, action) => {
   switch(action.type) {
     // DELETE
