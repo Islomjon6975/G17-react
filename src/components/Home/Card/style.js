@@ -8,7 +8,7 @@ const common = css`
 
 const Container = styled.div`
   /* width: 400px; */
-  min-width: 330px;
+  min-width: 250px;
   background: white; 
   padding: 15px;
 `

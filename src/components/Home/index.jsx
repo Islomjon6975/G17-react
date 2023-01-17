@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { Navbar } from './Navbar'
-import Products from './Products'
 import { Container } from './style'
+const Products = lazy(() => import('./Products/index.jsx'))
+
 
 export const Home = () => {
   return (
