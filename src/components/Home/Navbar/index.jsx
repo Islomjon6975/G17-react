@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { Drawer } from 'antd';
 import { useState } from 'react';
 import { Basket, Container, Title, Total, Wrapper } from './style'
@@ -31,6 +31,7 @@ export const Navbar = () => {
         >
           {
             state.cart.map((value) => {
+              
               return (
                <CartItem value={value} dispatch={dispatch} />
               )
@@ -38,7 +39,6 @@ export const Navbar = () => {
           }
           <Total>Total: ${state.cart.reduce((total, current) => total + current.price * current.count,0)}</Total>
         </Drawer>
-        
       </Wrapper>
     </Container>
   )

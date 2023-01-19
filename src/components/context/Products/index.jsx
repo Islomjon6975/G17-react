@@ -11,7 +11,6 @@ const ProductsContainerProvider = ({children}) => {
         return {...state, product: res}
       }
       case 'add-to-cart': {
-        console.log(action.payload.value, 'value')
         return {...state, cart: [...state.cart, action.payload.value]}
       }
       case 'delete-cart' : {

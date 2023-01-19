@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Box, Button, Container, Image, ImageWrapper, Price, Title, Wrapper } from './style'
 
 export const CartItem = ({value, dispatch}) => {
-
+  console.log('cartItem')
   return (
     <Container>
       <ImageWrapper>
@@ -23,4 +23,4 @@ export const CartItem = ({value, dispatch}) => {
   )
 }
 
-export default CartItem
+export default memo(CartItem)
