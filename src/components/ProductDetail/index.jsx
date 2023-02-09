@@ -9,7 +9,6 @@ export const ProdutDetail = () => {
     fetch(`https://dummyjson.com/products/${id}`)
     .then(res => res.json())
     .then(res => setProduct(res));
-                
   }, [])
 
   console.log(product);
